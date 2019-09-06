@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar class="titletop">
+    <ion-title >
+      Random
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Ingrese los items, separados por una coma: </ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-textarea class="fondo" placeholder="Ingrese items..." color="dark" auto-grow="true" [(ngModel)]="txtin"></ion-textarea>
+      </ion-card-content>
+    </ion-card>
+    
+    <ion-card class="result">
+      <ion-card-header>
+        <ion-card-subtitle class="resone">Su item de la suerte es <h3 class="restwo">{{word}}</h3></ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+    <ion-button expand="block" (click)="generate()">Random</ion-button>
+  </div>
+</ion-content>
